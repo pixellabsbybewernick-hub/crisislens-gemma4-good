@@ -1,0 +1,56 @@
+{
+  "scenario": {
+    "id": "clinic_supplies_005",
+    "impact_area": "Health & Sciences",
+    "field_note": "Clinic has no insulin refrigeration after power failure. 18 patients registered. Backup generator not working. Need cold storage and licensed medical review.",
+    "expected_incident": "medical_supply_gap",
+    "expected_urgency": "high",
+    "why_it_matters": "Health-related crisis reports need clear human medical review and supply routing."
+  },
+  "report": {
+    "incident_type": "medical_supply_gap",
+    "urgency": "high",
+    "summary": "Potential crisis report: medical supply gap with high urgency; human verification required.",
+    "affected_people_estimate": "approximately 18 mentioned in field note",
+    "location_clues": [
+      "location not confirmed; ask for GPS, landmark, or administrative area"
+    ],
+    "detected_risks": [
+      "possible medical need that requires qualified verification"
+    ],
+    "evidence": [
+      "Field note provided by user.",
+      "No image evidence was provided."
+    ],
+    "uncertainties": [
+      "No image available for visual confirmation.",
+      "Exact location and number of affected people need confirmation."
+    ],
+    "missing_information": [
+      "Exact location or landmark",
+      "Are there injured or trapped people?",
+      "Is the access route passable for responders?",
+      "What supplies are immediately needed?"
+    ],
+    "recommended_actions": [
+      "Escalate health-related details to a licensed professional."
+    ],
+    "priority_reasoning": "Urgency is derived from reported isolation, infrastructure/access risk, and number of affected people.",
+    "field_message": "URGENT FIELD REPORT: medical supply gap / HIGH. approximately 18 mentioned in field note. Verify location, injuries, access, and immediate needs.",
+    "structured_report": "INCIDENT: medical supply gap\nURGENCY: HIGH\nAFFECTED: approximately 18 mentioned in field note\nEVIDENCE: field note\nACTION: verify location, safety status, access route, and immediate needs.",
+    "safety_notes": [
+      "Verify on the ground before action is taken.",
+      "No medical diagnosis; health-related details require qualified review.",
+      "Keep a human coordinator in the loop."
+    ],
+    "language": "English"
+  },
+  "routing": {
+    "recommended_team": "Medical logistics + licensed health professional",
+    "routing_channel": "Notify duty coordinator and request field verification immediately",
+    "target_review_time": "1 hour",
+    "human_gate_required": true,
+    "tool_reason": "Routing is deterministic and auditable; Gemma proposes the report, a rule-based tool routes it."
+  },
+  "backend": "Deterministic demo fallback"
+}

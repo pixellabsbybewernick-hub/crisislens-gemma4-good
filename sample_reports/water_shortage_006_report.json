@@ -1,0 +1,65 @@
+{
+  "scenario": {
+    "id": "water_shortage_006",
+    "impact_area": "Digital Equity",
+    "field_note": "Remote settlement reports no safe drinking water for two days. Message translated from local language. Approx 120 people. Road is passable by motorcycle only.",
+    "expected_incident": "food_water_shortage",
+    "expected_urgency": "high",
+    "why_it_matters": "Low-connectivity, multilingual reporting needs compact SMS and translated structured output."
+  },
+  "report": {
+    "incident_type": "flooding",
+    "urgency": "high",
+    "summary": "Potential crisis report: flooding with high urgency; human verification required.",
+    "affected_people_estimate": "approximately 120 mentioned in field note",
+    "location_clues": [
+      "location not confirmed; ask for GPS, landmark, or administrative area"
+    ],
+    "detected_risks": [
+      "possible blocked access route",
+      "possible unsafe water exposure",
+      "possible infrastructure damage",
+      "access limitations for responders",
+      "possible shortage of basic supplies",
+      "possible shelter or evacuation support need"
+    ],
+    "evidence": [
+      "Field note provided by user.",
+      "No image evidence was provided."
+    ],
+    "uncertainties": [
+      "No image available for visual confirmation.",
+      "Exact location and number of affected people need confirmation."
+    ],
+    "missing_information": [
+      "Exact location or landmark",
+      "Are there injured or trapped people?",
+      "Is the access route passable for responders?",
+      "What supplies are immediately needed?"
+    ],
+    "recommended_actions": [
+      "Confirm whether people are trapped or isolated.",
+      "Route clean water and access assessment to the area.",
+      "Ask public works or an access team to verify passability.",
+      "Verify supply needs, quantities, and delivery access.",
+      "Confirm number of affected people and shelter capacity."
+    ],
+    "priority_reasoning": "Urgency is derived from reported isolation, infrastructure/access risk, and number of affected people.",
+    "field_message": "URGENT FIELD REPORT: flooding / HIGH. approximately 120 mentioned in field note. Verify location, injuries, access, and immediate needs.",
+    "structured_report": "INCIDENT: flooding\nURGENCY: HIGH\nAFFECTED: approximately 120 mentioned in field note\nEVIDENCE: field note\nACTION: verify location, safety status, access route, and immediate needs.",
+    "safety_notes": [
+      "Verify on the ground before action is taken.",
+      "No medical diagnosis; health-related details require qualified review.",
+      "Keep a human coordinator in the loop."
+    ],
+    "language": "English"
+  },
+  "routing": {
+    "recommended_team": "Emergency coordination + water/sanitation team",
+    "routing_channel": "Notify duty coordinator and request field verification immediately",
+    "target_review_time": "1 hour",
+    "human_gate_required": true,
+    "tool_reason": "Routing is deterministic and auditable; Gemma proposes the report, a rule-based tool routes it."
+  },
+  "backend": "Deterministic demo fallback"
+}

@@ -1,0 +1,62 @@
+{
+  "scenario": {
+    "id": "landslide_road_003",
+    "impact_area": "Global Resilience",
+    "field_note": "Road partially covered by mud and rocks after landslide. One bus route blocked. No injuries reported yet. Need access assessment before sending supplies.",
+    "expected_incident": "landslide",
+    "expected_urgency": "medium",
+    "why_it_matters": "Access-route uncertainty can delay relief unless routed to public works/search teams."
+  },
+  "report": {
+    "incident_type": "landslide",
+    "urgency": "high",
+    "summary": "Potential crisis report: landslide with high urgency; human verification required.",
+    "affected_people_estimate": "unknown",
+    "location_clues": [
+      "location not confirmed; ask for GPS, landmark, or administrative area"
+    ],
+    "detected_risks": [
+      "possible slope instability",
+      "blocked or unsafe access route",
+      "possible infrastructure damage",
+      "access limitations for responders",
+      "possible medical need that requires qualified verification"
+    ],
+    "evidence": [
+      "Field note provided by user.",
+      "No image evidence was provided."
+    ],
+    "uncertainties": [
+      "No image available for visual confirmation.",
+      "Exact location and number of affected people need confirmation."
+    ],
+    "missing_information": [
+      "Exact location or landmark",
+      "Are there injured or trapped people?",
+      "Is the access route passable for responders?",
+      "What supplies are immediately needed?"
+    ],
+    "recommended_actions": [
+      "Request an access and public-works assessment before sending vehicles.",
+      "Ask public works or an access team to verify passability.",
+      "Escalate health-related details to a licensed professional."
+    ],
+    "priority_reasoning": "Urgency is derived from reported isolation, infrastructure/access risk, and number of affected people.",
+    "field_message": "URGENT FIELD REPORT: landslide / HIGH. unknown. Verify location, injuries, access, and immediate needs.",
+    "structured_report": "INCIDENT: landslide\nURGENCY: HIGH\nAFFECTED: unknown\nEVIDENCE: field note\nACTION: verify location, safety status, access route, and immediate needs.",
+    "safety_notes": [
+      "Verify on the ground before action is taken.",
+      "No medical diagnosis; health-related details require qualified review.",
+      "Keep a human coordinator in the loop."
+    ],
+    "language": "English"
+  },
+  "routing": {
+    "recommended_team": "Search/access team + geotechnical/public works review",
+    "routing_channel": "Notify duty coordinator and request field verification immediately",
+    "target_review_time": "1 hour",
+    "human_gate_required": true,
+    "tool_reason": "Routing is deterministic and auditable; Gemma proposes the report, a rule-based tool routes it."
+  },
+  "backend": "Deterministic demo fallback"
+}

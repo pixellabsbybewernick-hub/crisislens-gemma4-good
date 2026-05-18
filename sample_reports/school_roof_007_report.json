@@ -1,0 +1,61 @@
+{
+  "scenario": {
+    "id": "school_roof_007",
+    "impact_area": "Future of Education",
+    "field_note": "Storm damaged roof of rural school. Classes suspended. No injuries. Need temporary learning space and safety inspection before reopening.",
+    "expected_incident": "infrastructure_damage",
+    "expected_urgency": "medium",
+    "why_it_matters": "Education continuity can be part of resilience after disasters."
+  },
+  "report": {
+    "incident_type": "infrastructure_damage",
+    "urgency": "medium",
+    "summary": "Potential crisis report: infrastructure damage with medium urgency; human verification required.",
+    "affected_people_estimate": "unknown",
+    "location_clues": [
+      "location not confirmed; ask for GPS, landmark, or administrative area"
+    ],
+    "detected_risks": [
+      "possible infrastructure damage",
+      "access limitations for responders",
+      "possible medical need that requires qualified verification",
+      "possible shelter or evacuation support need"
+    ],
+    "evidence": [
+      "Field note provided by user.",
+      "No image evidence was provided."
+    ],
+    "uncertainties": [
+      "No image available for visual confirmation.",
+      "Exact location and number of affected people need confirmation."
+    ],
+    "missing_information": [
+      "Exact location or landmark",
+      "Are there injured or trapped people?",
+      "Is the access route passable for responders?",
+      "What supplies are immediately needed?"
+    ],
+    "recommended_actions": [
+      "Ask public works or an access team to verify passability.",
+      "Escalate health-related details to a licensed professional.",
+      "Confirm number of affected people and shelter capacity."
+    ],
+    "priority_reasoning": "Urgency is derived from reported isolation, infrastructure/access risk, and number of affected people.",
+    "field_message": "URGENT FIELD REPORT: infrastructure damage / MEDIUM. unknown. Verify location, injuries, access, and immediate needs.",
+    "structured_report": "INCIDENT: infrastructure damage\nURGENCY: MEDIUM\nAFFECTED: unknown\nEVIDENCE: field note\nACTION: verify location, safety status, access route, and immediate needs.",
+    "safety_notes": [
+      "Verify on the ground before action is taken.",
+      "No medical diagnosis; health-related details require qualified review.",
+      "Keep a human coordinator in the loop."
+    ],
+    "language": "English"
+  },
+  "routing": {
+    "recommended_team": "Public works + search/access team",
+    "routing_channel": "Send to local coordinator within the next operational cycle",
+    "target_review_time": "8 hours",
+    "human_gate_required": true,
+    "tool_reason": "Routing is deterministic and auditable; Gemma proposes the report, a rule-based tool routes it."
+  },
+  "backend": "Deterministic demo fallback"
+}

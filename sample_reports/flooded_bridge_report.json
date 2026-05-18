@@ -1,0 +1,47 @@
+{
+  "report": {
+    "incident_type": "flooding",
+    "urgency": "high",
+    "summary": "Flooding has reportedly blocked a bridge, leaving approximately 40 people isolated near a school without clean water.",
+    "affected_people_estimate": "approximately 40 mentioned in field note",
+    "location_clues": [
+      "near a school",
+      "bridge blocked"
+    ],
+    "detected_risks": [
+      "blocked access route",
+      "possible water shortage",
+      "potential isolation of affected people"
+    ],
+    "evidence": [
+      "field note reports a blocked bridge",
+      "field note reports no clean water since yesterday"
+    ],
+    "uncertainties": [
+      "exact location is unknown",
+      "injuries are not confirmed",
+      "road passability is unknown"
+    ],
+    "missing_information": [
+      "exact GPS or landmark",
+      "injured or trapped people",
+      "available transport",
+      "current water supply level"
+    ],
+    "recommended_actions": [
+      "verify location",
+      "request access assessment",
+      "prioritize clean water logistics",
+      "confirm injuries or urgent evacuation needs"
+    ],
+    "priority_reasoning": "High urgency due to reported isolation, blocked access, and clean-water shortage affecting around 40 people.",
+    "field_message": "HIGH PRIORITY: Flooded bridge blocking access. ~40 people isolated near school. Clean water needed. Verify injuries, exact location, and road access.",
+    "structured_report": "INCIDENT: Flooding / access blockage\nURGENCY: HIGH\nAFFECTED: ~40 people\nNEEDS: clean water, access verification\nNEXT: confirm location, injuries, and passable route",
+    "safety_notes": [
+      "Verify on the ground before action is taken.",
+      "No identity inference or medical diagnosis.",
+      "Keep a human coordinator in the loop."
+    ],
+    "language": "English"
+  }
+}
