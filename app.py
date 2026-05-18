@@ -16,7 +16,7 @@ ASSET_DIR = APP_DIR / "assets"
 
 st.set_page_config(
     page_title="CrisisLens - Local AI Field Reports",
-    page_icon="›°ï¸",
+    page_icon="C",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -118,7 +118,7 @@ def hero() -> None:
     st.markdown(
         """
         <div class="hero">
-          <h1>›°ï¸ CrisisLens</h1>
+          <h1> CrisisLens</h1>
           <p><b>Local-first AI field reports with Gemma 4.</b> Turn photos and messy field notes into structured crisis reports, routing suggestions, SMS-ready summaries, and explicit uncertainty for human coordinators.</p>
         </div>
         """,
@@ -244,16 +244,15 @@ def main() -> None:
         st.header("Gemma backend")
         backend_mode = st.radio(
             "Backend mode",
-            ["auto", "gemma only", "demo fallback only"],
-            help="auto tries local Ollama/Gemma first and falls back to deterministic demo mode.",
+            ["auto", "gemma only", "demo fallback only"], index=2, help="auto tries local Ollama/Gemma first and falls back to deterministic demo mode.",
         )
         model = st.text_input("Ollama model", value=DEFAULT_MODEL)
         host = st.text_input("Ollama host", value=DEFAULT_OLLAMA_HOST)
         st.divider()
         st.header("Demo assets")
         use_sample = st.toggle("Use sample scenario", value=True)
-        output_language = st.selectbox("Output language", ["English", "Deutsch", "EspaÃ±ol", "FranÃ§ais", "Arabic", "Hindi", "Swahili"])
-        st.caption("For the strongest Kaggle video: run local Gemma 4, show image + note -> report -> routing -> SMS export.")
+        output_language = st.selectbox("Output language", ["English", "Deutsch", "Spanish", "French", "Arabic", "Hindi", "Swahili"])
+        st.caption("Hosted demo runs in fast demo mode. Full local Gemma 4 E2B / Ollama mode is shown in the video and reproducible from GitHub.")
 
     tab1, tab2, tab3, tab4 = st.tabs(["Analyze field report", "Coordinator batch view", "Submission story", "Data & prize fit"])
 
