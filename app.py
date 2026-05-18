@@ -15,8 +15,8 @@ APP_DIR = Path(__file__).resolve().parent
 ASSET_DIR = APP_DIR / "assets"
 
 st.set_page_config(
-    page_title="CrisisLens â€” Local AI Field Reports",
-    page_icon="ðŸ›°ï¸",
+    page_title="CrisisLens - Local AI Field Reports",
+    page_icon="›°ï¸",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -118,7 +118,7 @@ def hero() -> None:
     st.markdown(
         """
         <div class="hero">
-          <h1>ðŸ›°ï¸ CrisisLens</h1>
+          <h1>›°ï¸ CrisisLens</h1>
           <p><b>Local-first AI field reports with Gemma 4.</b> Turn photos and messy field notes into structured crisis reports, routing suggestions, SMS-ready summaries, and explicit uncertainty for human coordinators.</p>
         </div>
         """,
@@ -253,7 +253,7 @@ def main() -> None:
         st.header("Demo assets")
         use_sample = st.toggle("Use sample scenario", value=True)
         output_language = st.selectbox("Output language", ["English", "Deutsch", "EspaÃ±ol", "FranÃ§ais", "Arabic", "Hindi", "Swahili"])
-        st.caption("For the strongest Kaggle video: run local Gemma 4, show image + note â†’ report â†’ routing â†’ SMS export.")
+        st.caption("For the strongest Kaggle video: run local Gemma 4, show image + note -> report -> routing -> SMS export.")
 
     tab1, tab2, tab3, tab4 = st.tabs(["Analyze field report", "Coordinator batch view", "Submission story", "Data & prize fit"])
 
@@ -271,7 +271,7 @@ def main() -> None:
             uploaded = st.file_uploader("Upload field photo", type=["png", "jpg", "jpeg", "webp"])
             image_bytes = uploaded.read() if uploaded else sample_bytes
             if image_bytes:
-                st.image(image_bytes, caption=f"Evidence image â€” {scenario_name}", use_container_width=True)
+                st.image(image_bytes, caption=f"Evidence image - {scenario_name}", use_container_width=True)
             else:
                 st.info("No image selected. The app will analyze the note only.")
             field_note = st.text_area("Field note", value=default_note, height=160)
@@ -320,7 +320,7 @@ def main() -> None:
 
             **Ollama / local ops angle:** CrisisLens is designed to run through a local Ollama backend so the demo can show Gemma 4 operating without sending sensitive crisis reports to a cloud service.
 
-            **Demo arc:** messy evidence â†’ Gemma analysis â†’ structured report â†’ deterministic routing â†’ SMS export â†’ human gate.
+            **Demo arc:** messy evidence -> Gemma analysis -> structured report -> deterministic routing -> SMS export -> human gate.
             """
         )
 
